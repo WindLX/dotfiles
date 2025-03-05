@@ -1,0 +1,7 @@
+[user]
+	name = windlx
+	email = 1418043337@qq.com
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
