@@ -29,6 +29,7 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # alias
 alias ze=zellij
+alias ma='(cd ~/work/myagent && uv run main.py)'
 
 proxy_on() {
     export http_proxy="http://192.168.192.7:7890"
@@ -46,4 +47,4 @@ proxy_off() {
     echo "Proxy settings cleared"
 }
 
-alias ma="uv run ~/work/myagent/main.py"
+
