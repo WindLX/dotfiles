@@ -15,4 +15,4 @@
 	url = https://github.com/github/copilot.vim.git
 [submodule ".vim/pack/tpope/start/vim-commentary"]
 	path = .vim/pack/tpope/start/vim-commentary
-	url = https://tpope.io/vim/commentary.git
+	url = https://github.com/tpope/vim-commentary.git
