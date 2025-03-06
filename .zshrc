@@ -29,6 +29,7 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # alias
 alias ze=zellij
+
 proxy_on() {
     export http_proxy="http://192.168.192.7:7890"
     export HTTPS_PROXY="$http_proxy"
@@ -44,3 +45,5 @@ proxy_off() {
     unset http_proxy HTTPS_PROXY HTTP_PROXY https_proxy ftp_proxy all_proxy NO_PROXY
     echo "Proxy settings cleared"
 }
+
+alias ma="uv run ~/work/myagent/main.py"
