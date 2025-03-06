@@ -16,3 +16,6 @@
 [submodule ".zsh/zsh-completions"]
 	path = .zsh/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
+[submodule ".vim/pack/tpope/start/vim-commentary"]
+	path = .vim/pack/tpope/start/vim-commentary
+	url = https://tpope.io/vim/commentary.git
