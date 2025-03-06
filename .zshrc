@@ -40,7 +40,7 @@ proxy_on() {
     echo "Proxy set to: $http_proxy"
 }
 
-unset_proxy() {
+proxy_off() {
     unset http_proxy HTTPS_PROXY HTTP_PROXY https_proxy ftp_proxy all_proxy NO_PROXY
     echo "Proxy settings cleared"
 }

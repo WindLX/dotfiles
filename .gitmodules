@@ -1,0 +1,18 @@
+[submodule ".zsh/zsh-autosuggestions"]
+	path = .zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule ".zsh/zsh-syntax-highlighting"]
+	path = .zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule ".zsh/zsh-history-substring-search"]
+	path = .zsh/zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search.git
+[submodule ".vim/pack/tope/commentary"]
+	path = .vim/pack/tope/commentary
+	url = https://tpope.io/vim/commentary.git
+[submodule ".vim/pack/vim-commentary"]
+	path = .vim/pack/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule ".zsh/zsh-completions"]
+	path = .zsh/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
