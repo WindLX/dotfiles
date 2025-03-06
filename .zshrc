@@ -47,4 +47,4 @@ proxy_off() {
     echo "Proxy settings cleared"
 }
 
-
+source ~/.credentials
