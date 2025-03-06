@@ -7,15 +7,12 @@
 [submodule ".zsh/zsh-history-substring-search"]
 	path = .zsh/zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search.git
-[submodule ".vim/pack/tope/commentary"]
-	path = .vim/pack/tope/commentary
-	url = https://tpope.io/vim/commentary.git
-[submodule ".vim/pack/vim-commentary"]
-	path = .vim/pack/vim-commentary
-	url = https://github.com/tpope/vim-commentary.git
 [submodule ".zsh/zsh-completions"]
 	path = .zsh/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
 [submodule ".vim/pack/tpope/start/vim-commentary"]
 	path = .vim/pack/tpope/start/vim-commentary
 	url = https://tpope.io/vim/commentary.git
+[submodule ".vim/pack/github/start/copilot.vim"]
+	path = .vim/pack/github/start/copilot.vim
+	url = https://github.com/github/copilot.vim.git
