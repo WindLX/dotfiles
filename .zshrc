@@ -1,4 +1,4 @@
-export PATH=/home/windlx/.local/bin/:$PATH
+export PATH=$HOME/.local/bin/:$PATH
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -8,7 +8,7 @@ setopt autocd
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/windlx/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -33,13 +33,13 @@ bindkey -M vicmd 'j' history-substring-search-down
 alias ze=zellij
 
 proxy_on() {
-    export http_proxy="http://192.168.192.7:7890"
+    export http_proxy="http://127.0.0.1:7890"
     export HTTPS_PROXY="$http_proxy"
     export HTTP_PROXY="$http_proxy"
     export https_proxy="$http_proxy"
     export ftp_proxy="$http_proxy"
     export all_proxy="$http_proxy"
-    export NO_PROXY="localhost,127.0.0.1,::1,192.168.2.0/24,192.168.192.0/24"
+    export NO_PROXY="localhost,127.0.0.1,::1,192.168.5.0/24"
     echo "Proxy set to: $http_proxy"
 }
 
