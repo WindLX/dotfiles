@@ -33,11 +33,11 @@ bindkey -M vicmd 'j' history-substring-search-down
 alias ze=zellij
 
 proxy_on() {
-    export http_proxy="http://127.0.0.1:7890"
+    export http_proxy="http://127.0.0.1:7897"
     export HTTPS_PROXY="$http_proxy"
     export HTTP_PROXY="$http_proxy"
     export https_proxy="$http_proxy"
-    export ftp_proxy="$http_proxy"
+    # export ftp_proxy="$http_proxy"
     export all_proxy="$http_proxy"
     export NO_PROXY="localhost,127.0.0.1,::1,192.168.5.0/24"
     echo "Proxy set to: $http_proxy"
