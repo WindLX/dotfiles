@@ -25,6 +25,7 @@ local config = {
 
 	hyperlink_rules = wezterm.default_hyperlink_rules(),
 
+
 	default_prog = { "zsh" },
 	leader = { key = "Space", mods = "CTRL", timeout_milliseconds = 1000 },
 	keys = {
@@ -65,6 +66,12 @@ local config = {
 		},
 	},
 }
+
+table.insert(config.hyperlink_rules, {
+	regex = "\\b\\w+://(?:[\\w.-]+):\\d+\\S*\\b",
+	format = "$0",
+})
+
 
 wezterm.on("update-right-status", function(window, pane)
 	-- "Wed Mar 3 08:14"
