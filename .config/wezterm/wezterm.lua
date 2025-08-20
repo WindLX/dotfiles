@@ -1,0 +1,78 @@
+local wezterm = require("wezterm")
+local config = {
+	font_size = 14,
+	font = wezterm.font_with_fallback({
+		{ family = "Hack Nerd Font Mono", weight = "Regular" },
+		"WenQuanYi Micro Hei",
+	}),
+	initial_cols = 110,
+	initial_rows = 35,
+
+	color_scheme = "Catppuccin Mocha",
+
+	use_fancy_tab_bar = false,
+	-- window_decorations = "RESIZE",
+	window_background_opacity = 0.8,
+    kde_window_background_blur = true,
+	adjust_window_size_when_changing_font_size = false,
+
+	window_padding = {
+		left = 10,
+		right = 10,
+		top = 5,
+		bottom = 5,
+	},
+
+	hyperlink_rules = wezterm.default_hyperlink_rules(),
+
+	default_prog = { "zsh" },
+	leader = { key = "Space", mods = "CTRL", timeout_milliseconds = 1000 },
+	keys = {
+		{
+			key = "}",
+			mods = "CTRL|SHIFT",
+			action = wezterm.action.ActivateTabRelative(1),
+		},
+		{
+			key = "{",
+			mods = "CTRL|SHIFT",
+			action = wezterm.action.ActivateTabRelative(-1),
+		},
+		{
+			key = "L",
+			mods = "CTRL|SHIFT",
+			action = wezterm.action.SendKey({ key = "End", mods = "NONE" }),
+		},
+		{
+			key = "H",
+			mods = "CTRL|SHIFT",
+			action = wezterm.action.SendKey({ key = "Home", mods = "NONE" }),
+		},
+		{
+			key = "|",
+			mods = "LEADER|SHIFT",
+			action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+		},
+		{
+			key = "-",
+			mods = "LEADER",
+			action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
+		},
+		{
+			key = "n",
+			mods = "SHIFT|CTRL",
+			action = wezterm.action.ToggleFullScreen,
+		},
+	},
+}
+
+wezterm.on("update-right-status", function(window, pane)
+	-- "Wed Mar 3 08:14"
+	local date = wezterm.strftime("%a %b %-d %H:%M ")
+
+	window:set_right_status(wezterm.format({
+		{ Text = date },
+	}))
+end)
+
+return config
