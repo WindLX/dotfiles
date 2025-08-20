@@ -1,0 +1,9 @@
+[[index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+
+[pip]
+# 设置主要的PyPI镜像源
+index-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+
