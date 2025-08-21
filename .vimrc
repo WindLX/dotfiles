@@ -3,6 +3,8 @@ set nocompatible        " 禁用 vi 兼容模式
 filetype on             " 文件类型检测
 syntax on               " 语法高亮
 set encoding=utf-8      " 使用 UTF-8 编码
+noremap <C-c> "+y       " 剪切板
+noremap <C-v> "+p
 
 " 界面设置
 set number              " 显示行号
