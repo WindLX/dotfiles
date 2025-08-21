@@ -8,11 +8,16 @@ local config = {
 	initial_cols = 110,
 	initial_rows = 35,
 
-	color_scheme = "Catppuccin Mocha",
+	-- color_scheme = "Catppuccin Mocha",
+	-- color_scheme = "Tomorrow Night Eighties (Gogh)",
+	-- color_scheme = "Flatland",
+	-- color_scheme = "Frontend Galaxy (Gogh)",
+	-- color_scheme = "Tokyo Night Storm",
+	color_scheme = "BlulocoDark",
 
 	use_fancy_tab_bar = false,
 	-- window_decorations = "RESIZE",
-	window_background_opacity = 0.8,
+	window_background_opacity = 0.7,
     kde_window_background_blur = true,
 	adjust_window_size_when_changing_font_size = false,
 
