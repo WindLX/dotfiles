@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 local config = {
 	font_size = 14,
 	font = wezterm.font_with_fallback({
-		{ family = "Hack Nerd Font Mono", weight = "Regular" },
+		{ family = "Maple Mono NF CN", weight = "Regular" },
 		"WenQuanYi Micro Hei",
 	}),
 	initial_cols = 110,
