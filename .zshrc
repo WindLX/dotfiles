@@ -29,6 +29,9 @@ source ~/.zsh/zsh-sudo/zsh-sudo.zsh
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
+# zoxide
+eval "$(zoxide init zsh)"
+
 # alias
 alias ze=zellij
 
